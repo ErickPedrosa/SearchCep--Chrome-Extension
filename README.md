@@ -59,7 +59,6 @@
 <ul>
     <li>Google Chrome devidamente baixado e instalado em sua máquina.</li>
     <li>Acesso a internet (tanto para a instalação quanto para a conexão com a API)</li>
-    <li></li>
 </ul>
 
 <br>
