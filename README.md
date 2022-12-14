@@ -104,32 +104,18 @@
 <br>
 
 <h2 id="funcionamento">Funcionamento</h2>
-<p>O projeto é bem simples e de fácil utilização, as principais funcionalidades implementadas são:</p>
+<p>O projeto é bem simples e de fácil utilização, a principal funcionalidade implementada e suas sub-funcionalidades são:</p>
 <ul>
-    <li>Renderizar o pokémon</li>
-    <li>Navegar para o anterior e o próximo pokémon</li>
-    <li>Buscar um pokémon</li>
+    <li>Renderizar um enderço a partir de um CEP </li>
+    <ul>
+        <li>Dada a entrada um cep convertê-lo em um objeto contendo o endereço.</li>
+        <li>Dado esse endereço renderizá-lo na tela.</li>
+    </ul>
 </ul>
 <br>
 
-<h3>Renderizar o pokémon</h3>
-<p>A principal função da pokédex é mostrar o pokémon e suas características na tela, as características renderizadas pelo projeto são:</p>
-<h4>* Nome do pokémon *</h4>
-<h4>* Núm. do pokémon ou ID do pokémon *</h4>
-<h4>* Tipo do pokémon *</h4>
-<h4>* Altura (Height) *</h4>
-<h4>* Peso (Weight) *</h4>
-<h4>* Abilidades do pokémon *</h4>
-<h4>* Tipos que o pokémon é fraco contra *</h4>
-<h4>* Tipos que o pokémon tem vantagem contra *</h4>
-<br>
-
-<h3>Navegar para o anterior e o próximo pokémon</h3>
-<p>Utilizando das setas no canto superior da tela é possível navegar para o próximo/anterior pokémon. A seta superior direita leva ao próximo pokémon, enquanto a seta superior esquerda leva ao pokemon anterior.</p>
-<br>
-
-<h3>Buscar um pokémon</h3>
-<p>Ao clicar no ícone de busca uma caixa de pesquisa surge permitindo que você procure por um pokémon específico. A busca pode ocorrer por meio do nome do pokémon ou então pelo id.</p>
+<h3>Como utilizar</h3>
+<p>O uso da extensão é bastante fácil, você deve digitar um cep e então clicar em pesquisar. Se o cep digitado for válido será mostrado um endereço completo, se não for válido nada acontecerá. Após uma pesquisa você poderá limpar o resultado obtido pelo botão Limpar Resultados.</p>
 
 <br>
 <br>
@@ -145,11 +131,11 @@
 <br>
 
 <h4>API's</h4>
-<a href="https://pokeapi.co/">PokeAPI</a>
+<a href="https://viacep.com.br/">Viacep</a>
 <br>
 
 <h4>Referências</h4>
-<a href="https://www.youtube.com/watch?v=SjtdH3dWLa8">Vídeo do Manual do Dev</a>
+<a href="https://developer.chrome.com/docs/extensions/">Documentação do Google Chrome sobre as extensões</a>
 
 <br>
 <br>
