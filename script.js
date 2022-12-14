@@ -18,6 +18,8 @@ const buscarCep = async (cep) => {
 
 const renderCep = async (Cep) => {
 
+    div.innerHTML = "";
+
     let dados = await buscarCep(Cep);
 
     const h2 = document.createElement("h2");
@@ -34,7 +36,7 @@ const renderCep = async (Cep) => {
     cidade.textContent = `Cidade: ${dados.localidade}`;
     uf.textContent = `UF: ${dados.uf}`;
     
-
+    
     div.appendChild(h2);
     div.appendChild(logradouro);
     div.appendChild(complemento);
@@ -49,7 +51,9 @@ const renderCep = async (Cep) => {
 
     div.appendChild(voltar);
 
-    clear(limpar)
+    clear();
+
+    input.value = "";
 
 }
 
@@ -68,8 +72,8 @@ button.addEventListener("click", (event) => {
 
 })
 
-const clear = (limpar) => {
-    limpar = document.querySelector(".limpar");
+const clear = () => {
+    const limpar = document.querySelector(".limpar");
 
     limpar.addEventListener("click", (event) => {
         event.preventDefault();
