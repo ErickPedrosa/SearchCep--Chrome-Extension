@@ -65,7 +65,40 @@
 <br>
 
 <h2 id="status">Instalação</h2>
-<p>O projeto se encontra concluído e está atualmente na sua versão 1.0.</p>
+<p>A seguir explicarei como instalar e utilizar a extensão desse projeto.</p>
+<ol>
+    <li>
+        <p>Primeiramente você deve baixar o repositório zipado na sua máquina local.</p>
+        <img src="ReadmeImages/1.jpg" alt="Passo 1 do Passo-a-Passo">
+    </li>
+    <li>
+        <p>Logo após isso você deverá extrair tudo do arquivo zip.</p>
+        <img src="ReadmeImages/2.png" alt="Passo 2 do Passo-a-Passo">
+    </li>
+    <li>
+        <p>Então escolha um destino para o repositório e o extraia.</p>
+        <img src="ReadmeImages/3.png" alt="Passo 3 do Passo-a-Passo">
+    </li>
+    <li>
+        <p>Após extrair abra o Chrome, então vá para a página gerenciar extensões.</p>
+        <img src="ReadmeImages/4.jpg" alt="Passo 4 do Passo-a-Passo">
+    </li>
+    <li>
+        <p>Nessa página você deverá marcar a opção "Modo Desenvolvedor", já marcada na imagem, porém no seu navegador estará provavelmente desmarcada. Então clique em "Carregar sem Compactação" e selecione o repositório extraido.</p>
+        <img src="ReadmeImages/5.jpg" alt="Passo 5 do Passo-a-Passo">
+    </li>
+    <li>
+        <p>Pronto, a extensão já foi devidamente instalada. Agora você pode utilizá-la ao clicar no ícone no canto superior da tela e selecionar a extensão com o nome "Buscador de CEP".</p>
+        <img src="ReadmeImages/6.jpg" alt="Passo 6 do Passo-a-Passo">
+    </li>
+    <li>
+        <p>Agora é só você utilizar a extensão da forma que desejar</p>
+        <img src="ReadmeImages/7.png" alt="Passo 7 do Passo-a-Passo">
+    </li>
+</ol>
+
+
+
 
 <br>
 <br>
