@@ -1,6 +1,6 @@
 {
     "name": "Buscador de CEP",
-    "description": "",
+    "description": "Uma extensão do google chrome que permite que o usuário busque o endereço relacionado a um determinado CEP.",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": ["activeTab", "scripting"],

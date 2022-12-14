@@ -1,5 +1,5 @@
 
-<img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=FFCB05&style=lat-square&logo=GoogleChrome"/> <img src="https://img.shields.io/static/v1?label=Version&message=v1.2&color=FF3333&style=lat-square&logo=GoogleChrome"/> <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=33DD33&style=lat-square&logo=GoogleChrome"/>    
+<img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=FFCB05&style=lat-square&logo=GoogleChrome"/> <img src="https://img.shields.io/static/v1?label=Version&message=v1.0&color=FF3333&style=lat-square&logo=GoogleChrome"/> <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=33DD33&style=lat-square&logo=GoogleChrome"/>    
 
 <br>
 
@@ -16,6 +16,8 @@
  <a href="#objetivo">Objetivo</a> •
  <a href="#desenvolvimento">Desenvolvimento</a> •
  <a href="#status">Status do Projeto</a> •
+ <a href="#status">Pré-requisitos</a> •
+ <a href="#status">Instalação</a> •
  <a href="#funcionamento">Features</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a> 
@@ -33,39 +35,38 @@
 <p>Estava decido a fazer uma extensão para que pudesse aprender como criá-la, porém não consegui ter nenhuma ideia sobre o qual tipo de extensão faria. Foi quando descobri a API Viacep, então decidi fazer uma pequena extensão que devolvia os endereços ao procurar por um cep. </p>
 <br>
 
-<p>Então baseado nesse design, no projeto anterior, na pokeAPI e nas funcionalidades que eu pretendia implementar comecei a desenvolver o projeto.</p>
 
 <br>
 <br>
 
 <h2 class="desenvolvimento">Desenvolvimento</h2>
-<h3>Versão v1.0 - O início de tudo</h3>
-<p>Começando do projeto fiz rapidamente o html e fiz boa parte do css (deixei um pouco de lado a responsividade e me foquei apenas na estilização para desktops, pois era onde eu estava desenvolvendo o projeto).</p>
-<p>Logo voltei-me para o js, com base no projeto anterior já tinha algumas funções que eu acabei reutilizando, como a de renderizar a imagem, o nome e o id do pokemon, então quando acabei de adaptá-las para o novo projeto voltei-me para outras funcionalidades ainda não realizadas, algumas foram bem fáceis porque se baseavam nos mesmos princípios que as já implementadas, como a funcionalidade que gera a altura, o peso e as abilidades de um pokémon.</p>
-<p>Então rapidamente acabei de implementá-las e finalmente estava pronta a primeira versão da Pokédex. Ainda com algumas features faltando, mas estava funcional.</p>
+<h3>Versão v1.0</h3>
+<p>Para iniciar o projeto fiz um manifest.json, que é o arquivo que configura a extensão, o arquivo contém toda as informações necessárias para que a extensão funcione corretamente como nome da extensão, descrição, versão, permissões, entre outros.</p>
+<p>Logo após isso comecei fazendo um html e css bem simples já que o foco da minha aplicação não é em seu design, mas em sua funcionalidade.</p>
+<p>Então preparei-me para iniciar o JavaScript, começando pela função responsável por se comunicar com a API recebendo um cep como parâmetro e retornando um objeto. Logo após essa função criei a função que iria renderizar o endereço encontrado na tela, essa recebia como parâmetro um cep e internamente chamava a primeira para converté-lo em um objeto contendo o endereço que posteriormente será renderizado pela função. </p>
 <br>
-
-<h3>Versão v1.1 - Terminando as features necessárias</h3>
-<p>Após terminar a primeira versão, me foquei em terminar as features que faltavam, que eram:</p>
-<ul>
-    <li>Renderizar o tipo do pokémon.</li>
-    <li>Calular as fraquezas e vantegens de um tipo</li>
-    <li>Renderizar as fraquezas e vantegens de um pokémon</li>
-</ul>
-<p>A primeira feature foi relativamente fácil, pois só tive que ler a documentação da API para fazê-la, foi bem rápida.</p>
-<p>Já quando comecei a realizar a segunda, me deparei com a primeira grande dor de cabeça desse projeto, a feature que calcula as fraquezas e vantagens de um pokémon, gastei bastante tempo nessa feature para fazê-la funcionar. A API não devolvia nada que continha as fraquezas do pokémon, mas reparei que havia um request que devolvia as informações sobre um determinado tipo, incluindo informações como "Recebe o dobro de dano de um determinado tipo", então tive que utilizar isso e um sistema de pesos para cada resposta para calcular o dano total. Depois de finalmente conseguir calibrar o sistema de pesos corretamente, o que me deu bastante trabalho pois um pokémon pode ter mais de um tipo o que complicou um pouco o cálculo, a feature estava pronta.</p>
-<p>A terceira feature foi de longe a que me causou mais problemas, como as funções que dependiam da API eram assíncronas, inclusive a de cálculo, quando eu chamava a função ela me devolvia um Array incializado com 1, que o padrão, quando eu estava esperando o Array com os danos já cálculados. O que acontecia era que acabava por não renderizar nada já que ele devolvia o Array antes dele calcular, a forma que encontrei de solução foi utilizar um setTimeout para fazer a função de renderização esperar o cálculo terminar e só então tentar renderizar as fraquezas e vantagens. <strong>Obs: Não sei se essa foi a melhor forma de contornar esse problema, inclusive gera um pequeno bug, em que ele não renderiza as fraquezas mas para voltar para o normal é só ir para o próximo pokémon e então voltar para o anterior.</strong></p>
-<br>
-
-<h3>Versão v1.2 - Responsividade</h3>
-<p>Com o projeto praticamente acabado, nessa versão eu apenas dediquei-me a estilizar o projeto e melhorar sua responsividade, já que ele estva quebrando completamente em telas menores que 600px.</p>
-<p>Também acabei adicionando uma nova feature que eu não havia programado que foi a do botão de pesquisar, que te permite achar um pokémon por seu nome ou id.</p>
 
 <br>
 <br>
 
 <h2 id="status">Status do Projeto</h2>
-<p>O projeto se encontra concluído e está atualmente na sua versão 1.2, embora pretenda daqui a algum tempo retomá-lo para adicionar novas features.</p>
+<p>O projeto se encontra concluído e está atualmente na sua versão 1.0.</p>
+
+<br>
+<br>
+
+<h2 id="status">Pré-requisitos</h2>
+<ul>
+    <li>Google Chrome devidamente baixado e instalado em sua máquina.</li>
+    <li>Acesso a internet (tanto para a instalação quanto para a conexão com a API)</li>
+    <li></li>
+</ul>
+
+<br>
+<br>
+
+<h2 id="status">Instalação</h2>
+<p>O projeto se encontra concluído e está atualmente na sua versão 1.0.</p>
 
 <br>
 <br>
